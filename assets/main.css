@@ -51,7 +51,7 @@ img{
 
 h1, h2, h3{
     font-family: "Roboto Slab", serif;
-    font-weight: 400;
+    font-weight: 800;
     margin: 0;
     text-transform: capitalize;
 }
@@ -121,6 +121,7 @@ a.btn.btn-outline {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
+    margin: 0 10px;
 }
 .icon-circle {
     border: 1px solid  var(--primary-green);
@@ -199,7 +200,7 @@ header .logo a img {
     cursor: pointer;
     display: flex;
     align-items: center;
-    height: 44px;
+    height: 48px;
     width: 48px;
     justify-content: center;
     align-self: center;
@@ -207,12 +208,18 @@ header .logo a img {
 .nav-mobile{
     display: none;
     width: 100%;
+    height: 100vh;
     background: white;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     box-shadow: 0 15px 10px #00000024;
     border-top: 1px solid #dadada;
+}
+.nav-mobile-header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
 }
 
 .nav-mobile.active{
@@ -351,6 +358,8 @@ section.hm-features {
 
 section.hm-features h2 {
     margin-bottom: 30px;
+    text-align: center;
+
 }
 .features-image .ftr-image {
     margin-bottom: 30px;
@@ -439,6 +448,10 @@ section.hm-easy-steps-section h2{
     padding: 30px;
     background-color: white;
     border-radius: 30px;
+}
+.hm-easy-steps .step h4 {
+    font-size: 22px;
+    margin: 30px 0 20px;
 }
 .hm-easy-steps .step span.step-icon {
     width: 84px;
@@ -639,6 +652,7 @@ footer {
 
 .testimonial-header h2 {
     max-width: 400px;
+    text-align: center;
 }
 .slide-controllers {
     display: flex;
@@ -769,6 +783,9 @@ footer {
 }
 /* Media query for tablets and larger screens */
 @media (min-width: 768px) {
+    h1, h2, h3{
+        font-weight: 400;
+    }
     h1 {
         font-size: 48px;
     }
@@ -910,7 +927,9 @@ footer {
         flex-direction: row;
         align-items: flex-start;
     }
-
+    .testimonial-header h2 {
+        text-align: center;
+    }
     .footer-blocks {
         flex-direction: row;
         text-align: left;
