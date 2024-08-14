@@ -38,12 +38,15 @@ body {
     color: #333;
     line-height: 1.5;
 }
-*{
+*, :after, :before{
     box-sizing: border-box;
 }
 h1, h2, h3, h4, h5{
     margin: 0;
     text-transform: capitalize;
+}
+img{
+    max-width: 100%;
 }
 
 h1, h2, h3{
@@ -52,11 +55,11 @@ h1, h2, h3{
     margin: 0;
     text-transform: capitalize;
 }
-h1{
-    font-size: 48px;
-}
-h2{
+h1 {
     font-size: 26px;
+}
+h2 {
+    font-size: 24px;
 }
 a{
     text-decoration: none;
@@ -94,7 +97,12 @@ ul,li{
     border-radius: 12px;
     text-decoration: none;
 }
-
+a.btn.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--btn-primary);
+    color: var(--btn-primary);
+    font-weight: 500;
+}
 .btn.btn-secondary{
     background-color: var(--btn-secondary);
 }
@@ -230,7 +238,7 @@ ul.nav-links-mobile li.signup {
 .hm-hero {
     background-color: var(--bg-secondary);
     text-align: center;
-    padding: 130px 0;
+    padding:90px 0 20px;
     margin-top: -100px;
 
 }
@@ -271,13 +279,14 @@ ul.nav-links-mobile li.signup {
     border-radius: 8px;
     gap: 10px;
     flex: 2;
+    flex-direction: column;
 }
 .hm-hero-cta .hm-hero-start-form input.input-text {
     border: 1px solid #D8D8D8;
     border-radius: 8px;
-    height: 48px;
+    height: 36px;
     padding: 0;
-    flex: 2;
+ 
 }
 .get-start h4{
     font-size: 18px;
@@ -331,9 +340,15 @@ section.trusted-by .company-list {
 section.trusted-by  .company-list img {
     max-width: 150px;
 }
+.hm-features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 section.hm-features {
     padding: 30px 0;
 }
+
 section.hm-features h2 {
     margin-bottom: 30px;
 }
@@ -439,16 +454,324 @@ section.hm-easy-steps-section h2{
 section.hm-easy-steps-section .steps-cta {
     margin-top: 30px;
 }
-footer {
-    background-color: var(--primary-black);
-    color: var(--btn-text);
-    padding: 20px 0;
+section.financial-reports-section{
+    background-color:var(--primary-black);
+    color: white;
+    padding: 30px 0;
+}
+section.financial-reports-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+  
+section.financial-reports-section img.report-photo {
+    border-radius: 90px;
+}
+    .reports-image-container {
+        padding: 0 80px 0 30px;
+        position: relative;
+        
+    }
+section.financial-reports-section .report-grpah {
+    width: 180px;
+    height: 164px;
+    background-image: url(images/report-img1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+   
+}
+section.financial-reports-section .report-grpah-1{
+    right: 0;
+    top: 20px;
+}
+section.financial-reports-section .report-grpah-2{
+    background-image: url(images/report-img2.svg);
+    left: 0;
+    bottom: 120px;
+    height: 70px;
+    width: 98px;
+}
+section.financial-reports-section .reports-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #DEDEDE;
+}
+
+ul.reports-feature-list {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.reports-feature-list li::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(images/arrow-icon-w.svg);
+    border-radius: 50%;
+    background-color: var(--primary-green);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+}
+section.pricing-section {
+    padding: 80px 0;
+}
+.pricing-section h2{
     text-align: center;
+}
+.pricing-section h4{
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+.container.plan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top:20px;
 }
 
 
+.container.plan-container p.price {
+    text-align: center;
+    border-top: 1px solid rgb(0 0 0 / 30%);
+    padding: 15px 0 0;
+    margin: 0;
+}
+.pricing-section .plan {
+    border: 1px solid #D2D2D2;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.pricing-section .plan.dark{
+    border-color: var(--primary-black) ;
+    background-color: var(--primary-black);
+    color: #fff;
+}
+
+.pricing-section .plan.dark ul.plan-list li::before {
+    filter: brightness(3.2);
+}
+.pricing-section .plan h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.pricing-section ul.plan-list{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.container.plan-container p.price span {
+    font-size: 38px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+.pricing-section ul.plan-list li:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1px solid #313131;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin: 0 010px 0 0;
+    border-radius: 10px;
+    background-image: url(images/check-icon-blk.svg);
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pricing-section a.btn.btn-outline {
+    width: 200px;
+    margin: 0 auto;
+}
+section.testimonial-section {
+    background-color: #F8F8F8;
+    padding: 80px 0;
+}
+.testimonial-slider {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-slide {
+    min-width: 100%;
+}
+
+.arrow {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--primary-black);
+    color: var(--btn-text);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial-header h2 {
+    max-width: 400px;
+}
+.slide-controllers {
+    display: flex;
+    gap: 20px;
+}
+.slide-controllers  .arrow.arrow-prev {
+    transform: scaleX(-1);
+}
+
+.slide-controllers .arrow {
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    background-image: url(images/arrow-line.svg);
+    height: 18px;
+    width: 28px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slide.glider-slide p.testimonial-content {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+}
+.slide.glider-slide .testimonial-user p {
+    margin: 0;
+    line-height: 1.2;
+}
+.glider {
+    display: flex;
+}
+
+.slide {
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 100%;
+}
+
+.slide.glider-slide .testimonial-user {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.slide.glider-slide .testimonial-user .photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.faq-section{
+    padding: 30px 0;
+}
+.faqs-list .faq{
+    box-shadow: -2px 5px 7px rgb(0 0 0 / 9%);
+    padding: 20px 30px;
+    border-radius: 8px;
+    
+}
+.faqs-list .faq.active p {
+    display: block;
+}
+.faqs-list .faq p {
+    display: none;
+}
+.faq-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.faq-section .faq-content {
+    flex: 1;
+    font-size: 20px;
+}
+.faq-section .faqs-list {
+    flex: 2;
+}
+.footer-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #DEDEDE;
+    font-weight: 200;
+}
+.footer-blocks h4 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    gap: 10px;
+}
+.footer-links a {
+    color: #DEDEDE;
+    display: flex;
+    align-items: center;
+}
+.footer-links a:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(images/arrow-icon-green.svg);
+    border-radius: 50%;
+    border: 2px solid var(--primary-green);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+}
+.footer-block .features-logoes{
+    text-align: left;
+}
+.footer-block {
+    flex: 1;
+}
+.footer-block.about-block {
+    flex: 2;
+}
 /* Media query for tablets and larger screens */
 @media (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
     h2 {
         font-size: 36px;
     }
@@ -473,6 +796,7 @@ footer {
     }
     .hm-hero {
         text-align: left;
+        padding:130px 0 80px    ;
     }
     .hm-hero-cta {
         flex-direction: row;
@@ -482,6 +806,13 @@ footer {
     }
     .hero-image {
         display: flex;
+    }
+    .hm-hero-cta .hm-hero-start-form{
+        flex-direction: row;
+    }
+    
+    .hm-hero-cta .hm-hero-start-form input.input-text {
+    flex:1;
     }
     .cs-icon-inline{
         height: 58px;
@@ -496,6 +827,7 @@ footer {
         right: -28px;}
     .hm-features-container {
         display: flex;
+        flex-direction: row;
         gap:100px;
     }
  
@@ -508,6 +840,9 @@ footer {
     }
     .features-image .ftr-image {
         margin: 0;
+    }
+    .pricing-section .plan {
+        padding: 50px 40px;
     }
     .hm-features-list {
         flex:1;
@@ -538,7 +873,52 @@ footer {
         justify-content: center;
         gap: 20px;
     }
- 
+    section.financial-reports-section{
+        padding: 80px 0;
+    }
+    section.financial-reports-section .container{
+        flex-direction: row;
+      gap: 100px;
+    }
+    section.financial-reports-section .reports-content{
+        flex:1;
+    }
+    .reports-image-container {
+        flex: 1;
+        max-width:45%;
+    }
+    .container.plan-container {
+        flex-direction: row;
+        gap: 80px;
+        margin-top: 50px;
+    }
+    .faq-section{
+        padding: 80px 0;
+    }
+    .faq-section .container {
+        flex-direction: row;
+        gap: 100px;
+    }
+    .faqs-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+   
+    .testimonial-header {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer-blocks {
+        flex-direction: row;
+        text-align: left;
+        gap: 100px;
+    }
+  
+    
+    
 }
 
 /* Media query for desktops */
