@@ -1,0 +1,25 @@
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: border-color 0.3s ease;
+    outline: none;
+    line-height: 2;
+}
+
+input[type="text"]:active,
+input[type="email"]:focus,
+input[type="password"]:focus{
+border-color: var(--color-primary);
+}
+
+.input-group input{
+    width: 100%;
+}
+
+.btn{
+    line-height: 1.5;
+}

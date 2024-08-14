@@ -1,0 +1,62 @@
+/* Signin */
+
+.signin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+   
+}
+
+.signin-form {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.signin-form  form  {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    color: var(--color-black);
+    margin-top: 10px;
+}
+.or-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.or-group hr {
+    flex: 1;
+    opacity: .3;
+}
+
+.auth-link {
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 12px;
+    color: var(--color-black);
+    position: relative;
+    font-weight: 400;
+}
+.auth-link img
+{
+    position: absolute;
+    left: 20px;
+    margin-top:-2px;
+}
+
+.signup-link a {
+    font-weight: 400;
+}
