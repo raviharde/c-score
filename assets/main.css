@@ -154,16 +154,16 @@ a.btn.btn-outline {
 .icon-circle svg * {
   stroke: var(--color-primary);
 }
-header {
+header.page-header {
   padding: 20px 0;
   font-weight: 400;
   position: relative;
 }
-header .container {
+header.page-header .container {
   display: flex;
   justify-content: space-between;
 }
-header nav {
+header.page-header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -174,7 +174,9 @@ header nav {
 header .logo a img {
   height: 40px;
 }
-
+header .logo a img.logo-white{
+    display: none;
+}
 .nav-links {
   display: none;
   gap: 20px;
@@ -185,6 +187,12 @@ header .logo a img {
   margin: 10px 0;
   text-decoration: none;
   color: var(--color-black);
+}
+.user-avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .user-links {
   display: none;
@@ -215,7 +223,7 @@ header .logo a img {
   justify-content: center;
   align-self: center;
 }
-.nav-mobile {
+header.page-header .nav-mobile {
   display: none;
   width: 100%;
   height: 100vh;
@@ -226,13 +234,13 @@ header .logo a img {
   box-shadow: 0 15px 10px #00000024;
   border-top: 1px solid #dadada;
 }
-.nav-mobile-header {
+header.page-header .nav-mobile-header {
   display: flex;
   padding: 20px;
   justify-content: space-between;
 }
 
-.nav-mobile.active {
+header.page-header .nav-mobile.active {
   display: block;
 }
 ul.nav-links-mobile {
@@ -783,6 +791,9 @@ footer {
 }
 
 
+
+
+
 /* Media query for tablets and larger screens */
 @media (min-width: 768px) {
   h1,
@@ -804,7 +815,7 @@ footer {
     display: flex;
   }
 
-  .nav-mobile {
+  header.page-header .nav-mobile {
     display: none;
   }
   .container {
