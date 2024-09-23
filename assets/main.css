@@ -2,7 +2,7 @@
 
 /* Root Variables */
 :root {
-  --color-primary: #00cd8f;
+  --color-primary: #006AFF;
   --color-white: #ffffff;
   --color-black: #1f1f1f;
 
@@ -12,8 +12,8 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f4f4f4;
 
-  --btn-primary: #00cd8f;
-  --btn-primary-dark: #00c288;
+  --btn-primary: #006AFF;
+  --btn-primary-dark: #0060e7;
   --btn-secondary: #1f1f1f;
   --btn-text: #ffffff;
   --btn-link-text: #1f1f1f;
@@ -22,12 +22,14 @@
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
- 
+html {
+  scroll-behavior: smooth;
+}
 /* Base styles */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -76,6 +78,16 @@ li {
 
 img {
   max-width: 100%;
+}
+input[type="text"], input[type="password"], textarea{
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  height: 48px;
+  padding: 5px 20px;
+}
+textarea{
+  height: auto;
+  min-height: 100px;
 }
 /* Button Styles */
 
@@ -720,6 +732,7 @@ footer {
   box-shadow: -2px 5px 7px rgb(0 0 0 / 9%);
   padding: 20px 30px;
   border-radius: 8px;
+  cursor: pointer;
 }
 .faqs-list .faq.active p {
   display: block;
@@ -791,8 +804,16 @@ footer {
 }
 
 
+.breadcrumb .container {
+    display: flex;
+    align-items: center;
+    color: rgb(255 255 255 / 70%);
+    font-weight: 200;
+}
 
-
+.breadcrumb .container  span {
+    display: inline-flex;
+}
 
 /* Media query for tablets and larger screens */
 @media (min-width: 768px) {

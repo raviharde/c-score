@@ -1,0 +1,136 @@
+.about-banner-section{
+    background-color: var(--color-black);
+    color: white;
+    margin-top: -100px;
+    padding: 120px 0 50px;
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+}
+.about-banner-section h4{
+    font-size: 16px;
+    font-weight:400 ;
+    color: var(--color-primary);
+    text-transform: uppercase ;
+}
+.about-banner-section h2{
+font-family: "Roboto", sans-serif;
+font-size: 26px;
+font-weight:700 ;
+}
+.about-banner-section h2 span{
+    color: #868686;
+}
+
+.about-banner.container {
+    padding-bottom: 60px;
+}
+img.about-us-img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    object-position: center;
+    margin-top: -60px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.about-info {
+    font-size: 16px;
+    max-width: 680px;
+}
+.experts-hdr {
+    background: var(--color-primary);
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.experts-hdr .slide-controllers {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+.experts-hdr .slide-controllers .arrow{
+    color: white;
+    filter: invert(1);
+}
+.expert-thinks h3{
+    font-size: 42px;
+    font-weight: 500;
+
+}
+.about-services{
+    padding: 30px 0;
+}
+.about-info h3,.about-services h2{
+    font-size: 26px;
+    font-weight: 400;
+}
+.about-services h2{
+    margin-bottom: 20px;
+}
+.about-features-list {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .about-features-list .feature {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #ebebeb;
+    border-radius: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 50px);
+  }
+  
+  .about-features-list .feature h4 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .about-features-list .feature h5 {
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.5;
+  }
+
+
+  @media (min-width: 768px) {
+    .about-banner-section h2{
+        font-size: 42px;
+    }
+    .about-info{
+        font-size: 22px;
+    }
+    .about-info h3,.about-services h2{
+        font-size: 42px;
+       
+    }
+    .about-services h2{
+        margin-bottom:50px ;
+    }
+    .about-features-list{
+        flex-direction: row;
+    }
+    .about-services{
+        padding: 80px 0;
+    }
+    .contact-expert-slides{
+        display: block;
+        width: 50%;
+    }
+    .expert-thinks {
+        display: flex;
+        gap:50px;
+    }
+    .expert-thinks {
+        background: #F8F8F8;
+        padding: 30px;
+        border-radius: 20px;
+    }
+  }
