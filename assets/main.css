@@ -647,12 +647,6 @@ section.testimonial-section {
   text-decoration: none;
 }
 
-footer {
-  background-color: var(--color-black);
-  color: var(--btn-text);
-  padding: 80px 0;
-  text-align: center;
-}
 
 .testimonial-slider {
   position: relative;
@@ -756,12 +750,19 @@ footer {
     gap: 20px;
     flex: 2;
   }
+  footer {
+    background-color: var(--color-black);
+    color: var(--btn-text);
+    padding: 80px 0;
+    text-align: center;
+    font-weight: 400;
+  }
+  
 .footer-blocks {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #dedede;
-  font-weight: 200;
+  color: #A7B6C8;
 }
 .footer-blocks h4 {
   font-size: 22px;
@@ -776,17 +777,18 @@ footer {
   gap: 10px;
 }
 .footer-links a {
-  color: #dedede;
+  color: #A7B6C8;
   display: flex;
   align-items: center;
+  font-weight: 300;
 }
 .footer-links a:before {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(images/arrow-icon-green.svg);
+  background-image: url(images/arrow-icon-gray.svg);
   border-radius: 50%;
-  border: 2px solid var(--color-primary);
+  border: 2px solid #3E5672;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
