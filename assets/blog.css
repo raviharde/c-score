@@ -54,7 +54,6 @@
     flex-direction: column;
     gap: 10px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #C8C8C8;
 }
 .blog-card .blog-content {
     flex: 2;
@@ -86,7 +85,9 @@
 }
 
 .blog-card .blog-short-description {
-    margin-bottom: 10px;
+    margin: 10px 0 20px;
+    color: var(--text-secondary);
+    font-weight: 300;
 }
 .blog-card  a.read-more-link {
     background: #F8F8F8;
@@ -276,6 +277,7 @@
 .blog-view-related-list .blog-card {
     flex-direction: column;
     gap: 0;
+    flex: 1;
 }
 .blog-view-related-list .blog-card .blog-image img {
     width: 100%;
